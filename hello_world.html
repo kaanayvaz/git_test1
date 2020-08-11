@@ -2,23 +2,64 @@
 
 <html>
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
     <title>Hello World</title>
+    <style>
+        h1{
+            background-color: red;
+            font-size: 25;
+            font: 40px;
+            font-family: sans-serif;
+        }
+
+        .ordered{
+            background-color: hotpink;
+            size: 25px;
+            font-family: monospace, Arial, Helvetica, sans-serif;
+        }
+
+        #google{
+            font-family: Lobster,monospace;
+            size: 10px;
+        }
+
+        button{
+            color: red;
+            background-color: black;
+            font-size: 2em;
+            margin: 10px;
+            border: red;
+            padding: 20px;
+            border-radius: 50%;
+        }
+
+        #send{
+            background-color: red;
+            margin: 10px;
+        }
+
+
+
+    </style>
 </head>
 <body>
     <h1>Hello World</h1>
     <!--
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, placeat. Quasi dolorem rerum cum a consectetur nulla eaque hic consequatur eveniet doloremque reprehenderit, ullam incidunt ab soluta, repellendus iste et.</p>
     -->
-    <ul>
+    <ul style="font-family: sans-serif;
+    background-color: grey;">
         <li>unordered</li>
         <li>list</li>
     </ul>
-    <ol>
+    <ol class="ordered">
         <li>ordered</li>
         <li>list</li>
     </ol>
-    <a href="https://www.google.com.tr/">Google</a>
+    <a href="https://www.google.com.tr/" id="Google">Google</a>
     <a href="#">Yandex</a>
+    
+    <p id="send">Send Me New Links</p>
    
     <!--
         Link nested Picture
