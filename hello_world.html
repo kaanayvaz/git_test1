@@ -1,90 +1,79 @@
 <!DOCTYPE html>
-
 <html>
-<head>
-    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
-    <title>Hello World</title>
-    <style>
-        h1{
-            background-color: red;
-            font-size: 25;
-            font: 40px;
-            font-family: sans-serif;
-        }
+    <head>
+        <style>
+            body {
+                font-family: sans-serif;
+            }
+            .title{
+                text-align: center;
+            }
 
-        .ordered{
-            background-color: hotpink;
-            size: 25px;
-            font-family: monospace, Arial, Helvetica, sans-serif;
-        }
+            #box {
+                padding: 20px;
+                background-color: whitesmoke;
+                border-radius: 5%;
+                border-color: black;
+                border-style: groove;
+            }
 
-        #google{
-            font-family: Lobster,monospace;
-            size: 10px;
-        }
+            #article{
+                text-align: center;
+            }
 
-        button{
-            color: red;
-            background-color: black;
-            font-size: 2em;
-            margin: 10px;
-            border: red;
-            padding: 20px;
-            border-radius: 50%;
-        }
+            #links{
+                text-align: center;
+            }
 
-        #send{
-            background-color: red;
-            margin: 10px;
-        }
+            #odin{
+                margin: 20px 0px 20px 20px;
+                
+            }
+            #freecodecamp{
+                margin: 20px;
+            }
 
+            #question{
+                margin: 0px 0px 20px 0px;
+                text-align: center;
 
+            }
+            
+            button{
+                padding: 4.5px;
+                color:red;
+            }
 
-    </style>
-</head>
-<body>
-    <h1>Hello World</h1>
-    <!--
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, placeat. Quasi dolorem rerum cum a consectetur nulla eaque hic consequatur eveniet doloremque reprehenderit, ullam incidunt ab soluta, repellendus iste et.</p>
-    -->
-    <ul style="font-family: sans-serif;
-    background-color: grey;">
-        <li>unordered</li>
-        <li>list</li>
-    </ul>
-    <ol class="ordered">
-        <li>ordered</li>
-        <li>list</li>
-    </ol>
-    <a href="https://www.google.com.tr/" id="Google">Google</a>
-    <a href="#">Yandex</a>
-    
-    <p id="send">Send Me New Links</p>
-   
-    <!--
-        Link nested Picture
-    <a href="hello_world.html"><img src="/home/kaan/git_test1/earth-png-transparent-image-world-png-1150_1137.png"></a>
-    -->
-    <form action="hello_world.html">
-        <input type="text" placeholder="you should fill this">
-        <br>
-        <button type="submit">Submit</button>
-        </br>
-        <br>
-        <label for = On>
-            <input id="On" type="radio" name="On-Off" required>On
-        </label>
-        </br>
-        <br>
-        <label for = Off>
-            <input id="Off" type="radio" name="On-Off" checked>Off 
-        </label>
-        </br>
-        <br>
-            <label for = What>
-                <input id="What" type="checkbox" name="personailty">What
+        </style>
+    </head>
+
+    <body>
+        <h1 class="title"><b>How I Learned HTML</b></h1>
+        
+        <article>
+            <div id="box">
+                <div id="links">
+                    <div id="article">
+                        <b>Which resuces ı have been using</b>
+                        <p>I highly recommend for using</p>
+                        <ul>
+                            <li>Odin Project</li>
+                            <li>Free Code Camp</li>
+                        </ul>
+                    </div>
+                    <a href="https://www.theodinproject.com/"><b id="odin">Odin Project</b></a>
+                    <a href="https://www.freecodecamp.org/"><b id="freecodecamp">Free Code Camp</b></a>
+                </div>
+            </div>
+        </article>
+
+        <form>
+            <label>
+                <p><br id="queston">Which Web Site do you used in your coding journey send Me </br></p>
+                <input type="text"> 
             </label>
-        </br>
-    </form>
-</body>
+            <button>Send It</button>
+        </form>
+
+    </body>
 </html>
